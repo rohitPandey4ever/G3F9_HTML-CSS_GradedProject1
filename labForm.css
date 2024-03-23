@@ -1,0 +1,83 @@
+body {
+    margin: 0%;
+}
+
+form {
+    position: relative;
+    width: 75%;
+    left: 10%;
+    box-shadow: 0px 0px 10px grey;
+    overflow-y: auto;
+    height: 500px;
+    margin-top: 5%;
+    padding-left: 40px;
+    min-width: 800px;
+}
+
+form img {
+    position: sticky;
+    top: 0%;
+    float: right;
+    z-index: -1;
+    height: 100%;
+    width: 50%;
+    min-width: 0%;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid rgb(228, 220, 220);
+    outline: none;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 200px;
+    padding-left: 10px;
+    height: 25px;
+}
+
+/* Remove up and down arrow signs from number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input,
+label,
+p,
+#district {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 20px;
+    height: 18px;
+}
+
+input:focus {
+    border-bottom: 3px solid rgba(70, 131, 180, 0.5)
+}
+
+#district {
+    height: 30px;
+}
+
+button {
+    position: relative;
+    left: 40%;
+    margin-top: 40px;
+    border: none;
+    padding: 5px;
+    margin-left: 20px;
+    width: 80px;
+    font-size: 18px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 4px;
+}
+
+h2 {
+    padding-top: 10px;
+}

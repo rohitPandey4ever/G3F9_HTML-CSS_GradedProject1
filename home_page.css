@@ -1,0 +1,179 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    font-size: xx-large;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    background-color: #84b9de;
+    padding: 20px;
+}
+
+#navigate {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    background-color: blueviolet;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0px 10px;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+nav li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+nav li:hover>ul {
+    visibility: visible;
+}
+
+nav li:hover {
+    background-color: rgb(88, 31, 142);
+}
+
+nav a:active {
+    color: black;
+}
+
+nav ul ul li {
+    display: block;
+    padding: 0;
+    float: none;
+    background-color: blueviolet;
+}
+
+nav ul ul a {
+    line-height: 40px;
+}
+
+
+.main {
+    margin: 10px;
+    padding: 10px;
+}
+
+.product {
+    background-color: rgb(243, 243, 253);
+    width: 14%;
+    padding: 5px;
+    min-width: 140px;
+    min-height: 180px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px gainsboro;
+}
+
+.product img {
+    width: 98%;
+    height: 100px;
+}
+
+.product>h4,
+.product>p {
+    margin: 0%;
+}
+
+.product>p {
+    font-size: 14px;
+    color: blue;
+}
+
+.product:hover {
+    width: 15%;
+    height: 185px;
+    box-shadow: 10px 10px 20px rgb(92, 91, 82);
+}
+
+button {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid blue;
+    font-size: 16px;
+    padding: 2px;
+    font-weight: 700;
+    color: orange;
+}
+
+button:active {
+    background-color: rgb(250, 234, 230);
+    border: 2px solid rgb(0, 255, 76);
+}
+
+#ad {
+    background-color: aliceblue;
+    width: auto;
+    height: 550px;
+    overflow: hidden;
+    border: 2px solid steelblue;
+    min-height: 300px;
+    animation-name: image-change;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes image-change {
+    0% {
+        background-image: url(Animation/ani1.jpg);
+        background-repeat: no-repeat;
+        /* background-size: contain; */
+        background-size: cover;
+    }
+
+    25% {
+        background-image: url(Animation/ani2.png);
+        background-repeat: no-repeat;
+        /* background-size: contain; */
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(Animation/ani3.jpg);
+        background-repeat: no-repeat;
+        /* background-size: contain; */
+        background-size: cover;
+    }
+
+    75% {
+        background-image: url(Animation/ani4.jpg);
+        background-repeat: no-repeat;
+        /* background-size: contain; */
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(Animation/ani5.jpg);
+        background-repeat: no-repeat;
+        /* background-size: contain; */
+        background-size: cover;
+    }
+}
+
+footer {
+    /* font-size: xx-large; */
+    color: black;
+    text-align: center;
+    background-color: #84b9de;
+    padding: 20px;
+}

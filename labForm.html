@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="labForm.css">
+</head>
+
+<body>
+    <div>
+        <form action="" id="form">
+            <img src="Lab-Test/lab-test.jpg" alt="">
+            <h2>1. Your Contact Details</h2>
+
+            <input type="text" title="Patient name" placeholder="Full Name" required>
+            <input type="number" title="Patient id" placeholder="Patient Id if exists"><br>
+            <!--not adding required as it says "if" in placeholder which implies it's optional -->
+
+            <input type="number" title="Contact number" min="6000000000" maxlength="10" placeholder="Contact Number"
+                required>
+            <input type="email" title="Email-id" placeholder="Email id"><br>
+
+            <h2>2. Address</h2>
+
+            <input type="text" title="House No." placeholder="H-No" required>
+            <input type="text" title="Street" placeholder="Street" required><br>
+            <input type="text" title="Area" placeholder="Area" required><br>
+
+            <h4>District</h4>
+            <select name="District" id="district">
+                <option value="">Choose</option>
+                <option value="Buxar">Buxar</option>
+                <option value="Patna">Patna</option>
+                <option value="Bhojpur">Bhojpur</option>
+                <option value="Aurangabad">Aurangabad</option>
+            </select>
+
+            <h2>3.Choose The Test Type</h2>
+            <p>Check atleast one box without fail</p>
+            <input type="checkbox" name="op1" id="cbc" value="CBC">
+            <label for="cbc">CBC</label><br>
+
+            <input type="checkbox" name="op2" id="urine" value="Complete Urine">
+            <label for="urine">Complete Urine</label><br>
+
+            <input type="checkbox" name="op3" id="l_profile" value="Lipid Profile">
+            <label for="l_profile">Lipid Profile</label><br>
+
+            <input type="checkbox" name="op4" id="thyroid" value="Thyroid Stimulating Hormone(TSH)">
+            <label for="thyroid">Thyroid Stimulating Hormone(TSH)</label><br>
+
+            <input type="checkbox" name="op5" id="glucose" value="Glucose Test">
+            <label for="glucose">Glucose Test</label><br>
+
+            <h2>Do you want a hard copy of the report also?</h2>
+            <input type="radio" name="opt" id="yes" value="true" required>
+            <label for="yes">Yes</label><br>
+
+            <input type="radio" name="opt" id="no" value="false">
+            <label for="no">No</label><br>
+
+            <h2>Select Your Comfortable<br> Date and Time</h2>
+            <input type="date" name="date" id="date" required><br>
+            <input type="time" name="time" id="time" required>
+        </form>
+        <button form="form">Reset</button>
+        <button form="form">Submit</button>
+    </div>
+</body>
+
+</html>
